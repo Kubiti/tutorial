@@ -1,3 +1,12 @@
 nav, ul, li {
     display: inline-block;
 }
+
+body {
+    background-color: aqua;
+}
+
+
+header {
+    /* height: 20px; */
+}
