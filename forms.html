@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        label, input {
+            margin-bottom: 10px;
+        }
+        #send {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello, welcome to today's tutorial on Forms</h1>
+    <form>
+        <label for="f_name">First Name</label>
+        <input type="text" name="first_name" id="f_name"><br>
+        
+        <label for="l_name">Last Name</label>
+        <input type="text" name="last_name" id="l_name"><br>
+    
+        <label for="residence">Residence</label>
+        <input type="text" name="residence" id="residence" placeholder="Where do you stay?"> <br>
+
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age"><br>
+
+        <label for="p_word">Password</label>
+        <input type="password" name="password" id="p_word"><br>
+
+        <label for="satisfaction">How satisfied are you</label>
+        <input type="range" name="satisfaction" id="satisfaction" step="1" min="0" max="10"><br>
+
+        <p>What language do you want to learn</p>
+        <label for="php">PHP</label>
+        <input type="checkbox" name="language" id="php" value="PHP"><br>
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="language" id="js" value="JavaScript"><br>
+        <label for="php">Python</label>
+        <input type="checkbox" name="language" id="php" value="Python"><br>
+        
+        <p>What is favorite color</p>
+        
+        <input type="radio" name="color" id="blue" value="blue">
+        <label for="blue">Blue</label><br>
+        
+        <input type="radio" name="color" id="red" value="red">
+        <label for="red">Red</label><br>
+
+        
+        <input type="radio" name="color" id="pink" value="pink">
+        <label for="pink">Pink</label><br>
+
+        <label for="lunch">What do you want for lunch:</label>
+        <select name="lunch" id="lunch">
+            <option value="banku">Banku</option>
+            <option value="fufu">Fufu</option>
+            <option value="rice">Rice</option>
+            <option value="gob3">Gob3</option>
+            <option value="tuo_zaafi">Tuo Zaafi</option>
+        </select><br>
+        
+    
+        <label for="country">What country are you from?</label>
+        <input type="text" name="country" id="country" list="countries"> <br>
+
+        <datalist id="countries">
+            <option value="Albania">Albania</option>
+            <option value="Benin">Benin</option>
+            <option value="Congo">D.R. Congo</option>
+            <option value="Ghana">Ghana</option>
+        </datalist><br>
+
+        <label for="comments">Comments</label><br>
+        <textarea minlength="5" maxlength="20" name="comment" id="comments" cols="20" rows="5"></textarea>
+        <br>
+        <!-- <label for="send"></label> -->
+        <input id="send" type="submit" value="Send"> 
+    </form>
+</body>
+</html>

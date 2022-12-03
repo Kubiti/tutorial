@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, welcome to today's tutorial on Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Breakfast</th>
+                <td>Tea</td>
+                <td>Oats</td>
+                <td>Rice</td>
+                <td>Porridge</td>
+            </tr>
+            <tr>
+                <th scope="row">Lunch</th>
+                <td>Fufu</td>
+                <td rowspan="2">Banku</td>
+                <td colspan="2">Gob3</td>
+                <!-- <td>Gob3</td> -->
+            </tr>
+            <tr>
+                <th scope="row">Supper</th>
+                <td>Rice</td>
+                <!-- <td>TZ</td> -->
+                <td>Oats</td>
+                <td>Tea</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total</th>
+            <td>50</td>
+            <td>70</td>
+            <td>30</td>
+            <td>50</td>
+        </tfoot>
+        
+    </table>
+</body>
+</html>
